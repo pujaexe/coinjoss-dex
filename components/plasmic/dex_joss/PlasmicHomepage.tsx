@@ -298,7 +298,7 @@ function PlasmicHomepage__RenderFunc(props: {
                 sty.link__htPcl
               )}
               component={Link}
-              href={"dex.coinjoss.com" as const}
+              href={"https://dex.coinjoss.com/swaps" as const}
               platform={"nextjs"}
             >
               <Button
