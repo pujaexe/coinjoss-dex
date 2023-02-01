@@ -37,6 +37,8 @@ import {
 import { NavigationBar } from "@plasmicpkgs/plasmic-nav"; // plasmic-import: jGx9tiKJoex/codeComponent
 import Button from "../../Button"; // plasmic-import: QXv11hsUCwS/component
 
+import { useScreenVariants as useScreenVariantsfXhB6HkIx2U } from "./PlasmicGlobalVariant__Screen"; // plasmic-import: fXH_B-6hkIx2U/globalVariant
+
 import "@plasmicapp/react-web/lib/plasmic.css";
 
 import projectcss from "./plasmic_dex_joss.module.css"; // plasmic-import: izHjV9kAaSeWgz8SpCNdfG/projectcss
@@ -106,6 +108,10 @@ function PlasmicHomepage__RenderFunc(props: {
   const currentUser = p.useCurrentUser?.() || {};
 
   const [$queries, setDollarQueries] = React.useState({});
+
+  const globalVariants = ensureGlobalVariants({
+    screen: useScreenVariantsfXhB6HkIx2U()
+  });
 
   return (
     <React.Fragment>
@@ -443,7 +449,9 @@ function PlasmicHomepage__RenderFunc(props: {
                   hasGap={true}
                   className={classNames(projectcss.all, sty.column__c288A)}
                 >
-                  <div
+                  <p.Stack
+                    as={"div"}
+                    hasGap={true}
                     className={classNames(projectcss.all, sty.columns__cSrha)}
                   >
                     <p.Stack
@@ -511,9 +519,11 @@ function PlasmicHomepage__RenderFunc(props: {
                         }
                       </div>
                     </p.Stack>
-                  </div>
+                  </p.Stack>
 
-                  <div
+                  <p.Stack
+                    as={"div"}
+                    hasGap={true}
                     className={classNames(projectcss.all, sty.columns__v6PMr)}
                   >
                     <p.Stack
@@ -581,7 +591,7 @@ function PlasmicHomepage__RenderFunc(props: {
                         }
                       </div>
                     </p.Stack>
-                  </div>
+                  </p.Stack>
                 </p.Stack>
               </div>
             </p.Stack>
