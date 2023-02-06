@@ -360,7 +360,11 @@ function PlasmicHomepage__RenderFunc(props: {
             className={classNames(projectcss.all, sty.hero)}
           >
             {true ? (
-              <div className={classNames(projectcss.all, sty.freeBox__b3Kn4)}>
+              <p.Stack
+                as={"div"}
+                hasGap={true}
+                className={classNames(projectcss.all, sty.freeBox__b3Kn4)}
+              >
                 <h2
                   className={classNames(
                     projectcss.all,
@@ -404,7 +408,7 @@ function PlasmicHomepage__RenderFunc(props: {
                     {"Trade Now"}
                   </Button>
                 </p.PlasmicLink>
-              </div>
+              </p.Stack>
             ) : null}
           </p.Stack>
 
