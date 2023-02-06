@@ -46,13 +46,14 @@ import sty from "./PlasmicHomepage.module.css"; // plasmic-import: l0SHF3rL5yFv/
 
 import ChecksvgIcon from "./icons/PlasmicIcon__Checksvg"; // plasmic-import: G3K-SFjImLB/icon
 import IconIcon from "./icons/PlasmicIcon__Icon"; // plasmic-import: XgrqGPQlfCO/icon
-import Icon2Icon from "./icons/PlasmicIcon__Icon2"; // plasmic-import: WIM4ywG8jC/icon
-import MoneyRocketSvgrepoComsvgIcon from "./icons/PlasmicIcon__MoneyRocketSvgrepoComsvg"; // plasmic-import: DL09SAee60/icon
-import SwarmSessionSvgrepoComsvgIcon from "./icons/PlasmicIcon__SwarmSessionSvgrepoComsvg"; // plasmic-import: pi7JdATBjc/icon
 import SecureSvgrepoComsvgIcon from "./icons/PlasmicIcon__SecureSvgrepoComsvg"; // plasmic-import: 6umLT7HaBM/icon
 import BlockchainSvgrepoComsvgIcon from "./icons/PlasmicIcon__BlockchainSvgrepoComsvg"; // plasmic-import: Q6kFlcgGzV/icon
 import AnonymousSvgrepoComsvgIcon from "./icons/PlasmicIcon__AnonymousSvgrepoComsvg"; // plasmic-import: HyaKV-ucS7/icon
 import MultiLevelMarketingSvgrepoComsvgIcon from "./icons/PlasmicIcon__MultiLevelMarketingSvgrepoComsvg"; // plasmic-import: mrx_zfhkZ0/icon
+import Icon3Icon from "./icons/PlasmicIcon__Icon3"; // plasmic-import: Sx4ac0Z9xZ/icon
+import Icon4Icon from "./icons/PlasmicIcon__Icon4"; // plasmic-import: nix2_LE0eS/icon
+import Icon5Icon from "./icons/PlasmicIcon__Icon5"; // plasmic-import: DXIbklCl4G/icon
+import Icon6Icon from "./icons/PlasmicIcon__Icon6"; // plasmic-import: w7bMMt8klL/icon
 
 export type PlasmicHomepage__VariantMembers = {};
 export type PlasmicHomepage__VariantsArgs = {};
@@ -67,15 +68,12 @@ export type PlasmicHomepage__OverridesType = {
   root?: p.Flex<"div">;
   header?: p.Flex<"div">;
   navigationBar?: p.Flex<typeof NavigationBar>;
-  img?: p.Flex<typeof p.PlasmicImg>;
   hero?: p.Flex<"section">;
-  h2?: p.Flex<"h2">;
   h5?: p.Flex<"h5">;
-  button?: p.Flex<typeof Button>;
   feature?: p.Flex<"div">;
+  feature5?: p.Flex<"div">;
   feature2?: p.Flex<"div">;
   feature3?: p.Flex<"div">;
-  feature4?: p.Flex<"div">;
 };
 
 export interface DefaultHomepageProps {}
@@ -158,19 +156,20 @@ function PlasmicHomepage__RenderFunc(props: {
                     platform={"nextjs"}
                   >
                     <p.PlasmicImg
-                      data-plasmic-name={"img"}
-                      data-plasmic-override={overrides.img}
                       alt={""}
-                      className={classNames(sty.img)}
+                      className={classNames(sty.img__uV4YK)}
                       displayHeight={"40px" as const}
                       displayMaxHeight={"none" as const}
                       displayMaxWidth={"none" as const}
                       displayMinHeight={"0" as const}
                       displayMinWidth={"0" as const}
                       displayWidth={"auto" as const}
-                      src={
-                        "https://static1.plasmic.app/nav-logo-placeholder.svg" as const
-                      }
+                      src={{
+                        src: "/plasmic/dex_joss/images/logoJoss1Svg.svg",
+                        fullWidth: 300,
+                        fullHeight: 93,
+                        aspectRatio: 3.218045
+                      }}
                     />
                   </p.PlasmicLink>
                 ) : null
@@ -204,7 +203,7 @@ function PlasmicHomepage__RenderFunc(props: {
                       href={"/" as const}
                       platform={"nextjs"}
                     >
-                      {"Home"}
+                      {"Swap"}
                     </p.PlasmicLink>
                   ) : null}
                   {true ? (
@@ -213,13 +212,28 @@ function PlasmicHomepage__RenderFunc(props: {
                         projectcss.all,
                         projectcss.a,
                         projectcss.__wab_text,
-                        sty.link__h1LdB
+                        sty.link__hren8
                       )}
                       component={Link}
                       href={"/" as const}
                       platform={"nextjs"}
                     >
-                      {"About"}
+                      {"Perpetual"}
+                    </p.PlasmicLink>
+                  ) : null}
+                  {true ? (
+                    <p.PlasmicLink
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.a,
+                        projectcss.__wab_text,
+                        sty.link__raNxd
+                      )}
+                      component={Link}
+                      href={"/" as const}
+                      platform={"nextjs"}
+                    >
+                      {"Liquidity"}
                     </p.PlasmicLink>
                   ) : null}
                   {true ? (
@@ -234,9 +248,91 @@ function PlasmicHomepage__RenderFunc(props: {
                       href={"/" as const}
                       platform={"nextjs"}
                     >
-                      {"Contact"}
+                      {"Staking"}
                     </p.PlasmicLink>
                   ) : null}
+                  {true ? (
+                    <p.PlasmicLink
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.a,
+                        projectcss.__wab_text,
+                        sty.link__kApFm
+                      )}
+                      component={Link}
+                      href={"/" as const}
+                      platform={"nextjs"}
+                    >
+                      {"OTC"}
+                    </p.PlasmicLink>
+                  ) : null}
+                  {true ? (
+                    <p.PlasmicLink
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.a,
+                        projectcss.__wab_text,
+                        sty.link__h1LdB
+                      )}
+                      component={Link}
+                      href={"/" as const}
+                      platform={"nextjs"}
+                    >
+                      {"Lending NFT"}
+                    </p.PlasmicLink>
+                  ) : null}
+                  {true ? (
+                    <p.PlasmicLink
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.a,
+                        projectcss.__wab_text,
+                        sty.link__eUu0F
+                      )}
+                      component={Link}
+                      href={"/" as const}
+                      platform={"nextjs"}
+                    >
+                      {"Governance"}
+                    </p.PlasmicLink>
+                  ) : null}
+                  {true ? (
+                    <p.PlasmicLink
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.a,
+                        projectcss.__wab_text,
+                        sty.link__eku3S
+                      )}
+                      component={Link}
+                      href={"/" as const}
+                      platform={"nextjs"}
+                    >
+                      {"Merchants"}
+                    </p.PlasmicLink>
+                  ) : null}
+                  {true ? (
+                    <p.PlasmicLink
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.a,
+                        projectcss.__wab_text,
+                        sty.link___7Fv0
+                      )}
+                      component={Link}
+                      href={"/" as const}
+                      platform={"nextjs"}
+                    >
+                      {"Lottery"}
+                    </p.PlasmicLink>
+                  ) : null}
+
+                  <Button
+                    className={classNames("__wab_instance", sty.button___4X889)}
+                    color={"white" as const}
+                  >
+                    {"Connect Wallet"}
+                  </Button>
                 </React.Fragment>
               }
               openButton={
@@ -263,53 +359,53 @@ function PlasmicHomepage__RenderFunc(props: {
             hasGap={true}
             className={classNames(projectcss.all, sty.hero)}
           >
-            <h2
-              data-plasmic-name={"h2"}
-              data-plasmic-override={overrides.h2}
-              className={classNames(
-                projectcss.all,
-                projectcss.h2,
-                projectcss.__wab_text,
-                sty.h2
-              )}
-            >
-              {"Decentralize Your Trading on Coinjoss"}
-            </h2>
+            {true ? (
+              <div className={classNames(projectcss.all, sty.freeBox__b3Kn4)}>
+                <h2
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.h2,
+                    projectcss.__wab_text,
+                    sty.h2__vmFvx
+                  )}
+                >
+                  {"Decentralize Your Trading on Coinjoss"}
+                </h2>
 
-            <h5
-              data-plasmic-name={"h5"}
-              data-plasmic-override={overrides.h5}
-              className={classNames(
-                projectcss.all,
-                projectcss.h5,
-                projectcss.__wab_text,
-                sty.h5
-              )}
-            >
-              {
-                "Join the Revolution of Secure and Transparent Token Exchange on Coinjoss.com"
-              }
-            </h5>
+                <h5
+                  data-plasmic-name={"h5"}
+                  data-plasmic-override={overrides.h5}
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.h5,
+                    projectcss.__wab_text,
+                    sty.h5
+                  )}
+                >
+                  {
+                    "empowers users to take control of their financial future and engage with the world of cryptocurrency"
+                  }
+                </h5>
 
-            <p.PlasmicLink
-              className={classNames(
-                projectcss.all,
-                projectcss.a,
-                sty.link__htPcl
-              )}
-              component={Link}
-              href={"https://dex.coinjoss.com/swaps" as const}
-              platform={"nextjs"}
-            >
-              <Button
-                data-plasmic-name={"button"}
-                data-plasmic-override={overrides.button}
-                className={classNames("__wab_instance", sty.button)}
-                color={"white" as const}
-              >
-                {"Trade Now"}
-              </Button>
-            </p.PlasmicLink>
+                <p.PlasmicLink
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.a,
+                    sty.link__htPcl
+                  )}
+                  component={Link}
+                  href={"https://dex.coinjoss.com/swaps" as const}
+                  platform={"nextjs"}
+                >
+                  <Button
+                    className={classNames("__wab_instance", sty.button__u42S8)}
+                    color={"white" as const}
+                  >
+                    {"Trade Now"}
+                  </Button>
+                </p.PlasmicLink>
+              </div>
+            ) : null}
           </p.Stack>
 
           <div
@@ -317,21 +413,49 @@ function PlasmicHomepage__RenderFunc(props: {
             data-plasmic-override={overrides.feature}
             className={classNames(projectcss.all, sty.feature)}
           >
+            <h2
+              className={classNames(
+                projectcss.all,
+                projectcss.h2,
+                projectcss.__wab_text,
+                sty.h2__dvQtt
+              )}
+            >
+              {"Our Service"}
+            </h2>
+
             <p.Stack
               as={"div"}
               hasGap={true}
               className={classNames(projectcss.all, sty.freeBox__ccKuq)}
             >
               <div className={classNames(projectcss.all, sty.freeBox___38QAb)}>
-                <div className={classNames(projectcss.all, sty.columns__n1V7P)}>
+                <p.Stack
+                  as={"div"}
+                  hasGap={true}
+                  className={classNames(projectcss.all, sty.columns__n1V7P)}
+                >
                   <p.Stack
                     as={"div"}
                     hasGap={true}
                     className={classNames(projectcss.all, sty.column___7LdXv)}
                   >
-                    <Icon2Icon
-                      className={classNames(projectcss.all, sty.svg__kwTu9)}
-                      role={"img"}
+                    <p.PlasmicImg
+                      alt={""}
+                      className={classNames(sty.img__hERvN)}
+                      displayHeight={"auto" as const}
+                      displayMaxHeight={"none" as const}
+                      displayMaxWidth={"100%" as const}
+                      displayMinHeight={"0" as const}
+                      displayMinWidth={"0" as const}
+                      displayWidth={"200px" as const}
+                      loading={"lazy" as const}
+                      src={{
+                        src: "/plasmic/dex_joss/images/image2.png",
+                        fullWidth: 1024,
+                        fullHeight: 1024,
+                        aspectRatio: undefined
+                      }}
                     />
 
                     <h4
@@ -363,9 +487,22 @@ function PlasmicHomepage__RenderFunc(props: {
                     hasGap={true}
                     className={classNames(projectcss.all, sty.column__i8WHs)}
                   >
-                    <MoneyRocketSvgrepoComsvgIcon
-                      className={classNames(projectcss.all, sty.svg__owPpv)}
-                      role={"img"}
+                    <p.PlasmicImg
+                      alt={""}
+                      className={classNames(sty.img__g0Kl)}
+                      displayHeight={"auto" as const}
+                      displayMaxHeight={"none" as const}
+                      displayMaxWidth={"100%" as const}
+                      displayMinHeight={"0" as const}
+                      displayMinWidth={"0" as const}
+                      displayWidth={"200px" as const}
+                      loading={"lazy" as const}
+                      src={{
+                        src: "/plasmic/dex_joss/images/image3.png",
+                        fullWidth: 1024,
+                        fullHeight: 1024,
+                        aspectRatio: undefined
+                      }}
                     />
 
                     <h4
@@ -376,7 +513,7 @@ function PlasmicHomepage__RenderFunc(props: {
                         sty.h4__t1R
                       )}
                     >
-                      {"Earn"}
+                      {"Liquidity"}
                     </h4>
 
                     <div
@@ -397,9 +534,22 @@ function PlasmicHomepage__RenderFunc(props: {
                     hasGap={true}
                     className={classNames(projectcss.all, sty.column__nerkR)}
                   >
-                    <SwarmSessionSvgrepoComsvgIcon
-                      className={classNames(projectcss.all, sty.svg__tfFi)}
-                      role={"img"}
+                    <p.PlasmicImg
+                      alt={""}
+                      className={classNames(sty.img__hRkru)}
+                      displayHeight={"auto" as const}
+                      displayMaxHeight={"none" as const}
+                      displayMaxWidth={"100%" as const}
+                      displayMinHeight={"0" as const}
+                      displayMinWidth={"0" as const}
+                      displayWidth={"200px" as const}
+                      loading={"lazy" as const}
+                      src={{
+                        src: "/plasmic/dex_joss/images/image4.png",
+                        fullWidth: 1024,
+                        fullHeight: 1024,
+                        aspectRatio: undefined
+                      }}
                     />
 
                     <h4
@@ -410,7 +560,7 @@ function PlasmicHomepage__RenderFunc(props: {
                         sty.h4__gWEs
                       )}
                     >
-                      {"Collaborate"}
+                      {"Lending NFT"}
                     </h4>
 
                     <div
@@ -425,28 +575,335 @@ function PlasmicHomepage__RenderFunc(props: {
                       }
                     </div>
                   </p.Stack>
-                </div>
+                </p.Stack>
+              </div>
+
+              <div className={classNames(projectcss.all, sty.freeBox__eLisT)}>
+                <p.Stack
+                  as={"div"}
+                  hasGap={true}
+                  className={classNames(projectcss.all, sty.columns__tthJh)}
+                >
+                  <p.Stack
+                    as={"div"}
+                    hasGap={true}
+                    className={classNames(projectcss.all, sty.column___4F0Pr)}
+                  >
+                    <p.PlasmicImg
+                      alt={""}
+                      className={classNames(sty.img__o9AVd)}
+                      displayHeight={"auto" as const}
+                      displayMaxHeight={"none" as const}
+                      displayMaxWidth={"100%" as const}
+                      displayMinHeight={"0" as const}
+                      displayMinWidth={"0" as const}
+                      displayWidth={"200px" as const}
+                      loading={"lazy" as const}
+                      src={{
+                        src: "/plasmic/dex_joss/images/image5.png",
+                        fullWidth: 1024,
+                        fullHeight: 1024,
+                        aspectRatio: undefined
+                      }}
+                    />
+
+                    <h4
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.h4,
+                        projectcss.__wab_text,
+                        sty.h4__fAjTc
+                      )}
+                    >
+                      {"Staking"}
+                    </h4>
+
+                    <div
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.__wab_text,
+                        sty.text__jXHec
+                      )}
+                    >
+                      {
+                        "Boost your earning potential white Stake your coins and earn rewards on our DEX platform. "
+                      }
+                    </div>
+                  </p.Stack>
+
+                  <p.Stack
+                    as={"div"}
+                    hasGap={true}
+                    className={classNames(projectcss.all, sty.column___2N9Yz)}
+                  >
+                    <p.PlasmicImg
+                      alt={""}
+                      className={classNames(sty.img__lgCy0)}
+                      displayHeight={"auto" as const}
+                      displayMaxHeight={"none" as const}
+                      displayMaxWidth={"100%" as const}
+                      displayMinHeight={"0" as const}
+                      displayMinWidth={"0" as const}
+                      displayWidth={"200px" as const}
+                      loading={"lazy" as const}
+                      src={{
+                        src: "/plasmic/dex_joss/images/image6.png",
+                        fullWidth: 1024,
+                        fullHeight: 1024,
+                        aspectRatio: undefined
+                      }}
+                    />
+
+                    <h4
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.h4,
+                        projectcss.__wab_text,
+                        sty.h4___3M7Cr
+                      )}
+                    >
+                      {"Governance"}
+                    </h4>
+
+                    <div
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.__wab_text,
+                        sty.text__l1P2R
+                      )}
+                    >
+                      {
+                        "Create a decentralized, transparent, and fair decision-making process that ensures the long-term success of the platform."
+                      }
+                    </div>
+                  </p.Stack>
+
+                  <p.Stack
+                    as={"div"}
+                    hasGap={true}
+                    className={classNames(projectcss.all, sty.column__sVp3J)}
+                  >
+                    <p.PlasmicImg
+                      alt={""}
+                      className={classNames(sty.img__go1Yd)}
+                      displayHeight={"auto" as const}
+                      displayMaxHeight={"none" as const}
+                      displayMaxWidth={"100%" as const}
+                      displayMinHeight={"0" as const}
+                      displayMinWidth={"0" as const}
+                      displayWidth={"200px" as const}
+                      loading={"lazy" as const}
+                      src={{
+                        src: "/plasmic/dex_joss/images/image7.png",
+                        fullWidth: 1024,
+                        fullHeight: 1024,
+                        aspectRatio: undefined
+                      }}
+                    />
+
+                    <h4
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.h4,
+                        projectcss.__wab_text,
+                        sty.h4__eOw
+                      )}
+                    >
+                      {"OTC"}
+                    </h4>
+
+                    <div
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.__wab_text,
+                        sty.text__eeHjJ
+                      )}
+                    >
+                      {"Peer to Peer service to trade your assets"}
+                    </div>
+                  </p.Stack>
+                </p.Stack>
+              </div>
+
+              <div className={classNames(projectcss.all, sty.freeBox__tFk9)}>
+                <p.Stack
+                  as={"div"}
+                  hasGap={true}
+                  className={classNames(projectcss.all, sty.columns__kzZex)}
+                >
+                  <p.Stack
+                    as={"div"}
+                    hasGap={true}
+                    className={classNames(projectcss.all, sty.column__iHNsU)}
+                  >
+                    <p.PlasmicImg
+                      alt={""}
+                      className={classNames(sty.img___52ZLo)}
+                      displayHeight={"auto" as const}
+                      displayMaxHeight={"none" as const}
+                      displayMaxWidth={"100%" as const}
+                      displayMinHeight={"0" as const}
+                      displayMinWidth={"0" as const}
+                      displayWidth={"200px" as const}
+                      loading={"lazy" as const}
+                      src={{
+                        src: "/plasmic/dex_joss/images/image8.png",
+                        fullWidth: 1024,
+                        fullHeight: 1024,
+                        aspectRatio: undefined
+                      }}
+                    />
+
+                    <h4
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.h4,
+                        projectcss.__wab_text,
+                        sty.h4__iM5Vg
+                      )}
+                    >
+                      {"Merchants"}
+                    </h4>
+
+                    <div
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.__wab_text,
+                        sty.text__n6YrC
+                      )}
+                    >
+                      {
+                        "service providers scattered in several areas to help your transaction"
+                      }
+                    </div>
+                  </p.Stack>
+
+                  <p.Stack
+                    as={"div"}
+                    hasGap={true}
+                    className={classNames(projectcss.all, sty.column__dOb0B)}
+                  >
+                    <p.PlasmicImg
+                      alt={""}
+                      className={classNames(sty.img__qwWeo)}
+                      displayHeight={"auto" as const}
+                      displayMaxHeight={"none" as const}
+                      displayMaxWidth={"100%" as const}
+                      displayMinHeight={"0" as const}
+                      displayMinWidth={"0" as const}
+                      displayWidth={"200px" as const}
+                      loading={"lazy" as const}
+                      src={{
+                        src: "/plasmic/dex_joss/images/image9.png",
+                        fullWidth: 1024,
+                        fullHeight: 1024,
+                        aspectRatio: undefined
+                      }}
+                    />
+
+                    <h4
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.h4,
+                        projectcss.__wab_text,
+                        sty.h4___3P1D
+                      )}
+                    >
+                      {"Lottery"}
+                    </h4>
+
+                    <div
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.__wab_text,
+                        sty.text__etoSd
+                      )}
+                    >
+                      {
+                        "Win prizes while ensuring your initial investment is returned, making it a safe and secure way to play the lottery."
+                      }
+                    </div>
+                  </p.Stack>
+
+                  <p.Stack
+                    as={"div"}
+                    hasGap={true}
+                    className={classNames(projectcss.all, sty.column__x5Sea)}
+                  >
+                    <p.PlasmicImg
+                      alt={""}
+                      className={classNames(sty.img__aVgo7)}
+                      displayHeight={"auto" as const}
+                      displayMaxHeight={"none" as const}
+                      displayMaxWidth={"100%" as const}
+                      displayMinHeight={"0" as const}
+                      displayMinWidth={"0" as const}
+                      displayWidth={"200px" as const}
+                      loading={"lazy" as const}
+                      src={{
+                        src: "/plasmic/dex_joss/images/image10.png",
+                        fullWidth: 1024,
+                        fullHeight: 1024,
+                        aspectRatio: undefined
+                      }}
+                    />
+
+                    <h4
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.h4,
+                        projectcss.__wab_text,
+                        sty.h4__klwCp
+                      )}
+                    >
+                      {"Perpetual"}
+                    </h4>
+
+                    <div
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.__wab_text,
+                        sty.text___4Oaf0
+                      )}
+                    >
+                      {
+                        "a decentralized exchange platform for trading futures contracts with cryptocurrencies"
+                      }
+                    </div>
+                  </p.Stack>
+                </p.Stack>
               </div>
             </p.Stack>
           </div>
 
           <div
-            data-plasmic-name={"feature2"}
-            data-plasmic-override={overrides.feature2}
-            className={classNames(projectcss.all, sty.feature2)}
+            data-plasmic-name={"feature5"}
+            data-plasmic-override={overrides.feature5}
+            className={classNames(projectcss.all, sty.feature5)}
           >
+            <h2
+              className={classNames(
+                projectcss.all,
+                projectcss.h2,
+                projectcss.__wab_text,
+                sty.h2__wIJtG
+              )}
+            >
+              {"What advantages do we offer over others?"}
+            </h2>
+
             <p.Stack
               as={"div"}
               hasGap={true}
-              className={classNames(projectcss.all, sty.freeBox__nuUyK)}
+              className={classNames(projectcss.all, sty.freeBox__umBlP)}
             >
-              <div className={classNames(projectcss.all, sty.columns__eHEiY)}>
-                <div className={classNames(projectcss.all, sty.column__z5BDn)}>
+              <div className={classNames(projectcss.all, sty.columns___1SKnD)}>
+                <div className={classNames(projectcss.all, sty.column__b566H)}>
                   <div
                     className={classNames(
                       projectcss.all,
                       projectcss.__wab_text,
-                      sty.text__nWhO
+                      sty.text__eqT0
                     )}
                   >
                     {
@@ -458,20 +915,20 @@ function PlasmicHomepage__RenderFunc(props: {
                 <p.Stack
                   as={"div"}
                   hasGap={true}
-                  className={classNames(projectcss.all, sty.column__c288A)}
+                  className={classNames(projectcss.all, sty.column___2P4F)}
                 >
                   <p.Stack
                     as={"div"}
                     hasGap={true}
-                    className={classNames(projectcss.all, sty.columns__cSrha)}
+                    className={classNames(projectcss.all, sty.columns__d2KvK)}
                   >
                     <p.Stack
                       as={"div"}
                       hasGap={true}
-                      className={classNames(projectcss.all, sty.column__x6HmG)}
+                      className={classNames(projectcss.all, sty.column__l6HTx)}
                     >
                       <SecureSvgrepoComsvgIcon
-                        className={classNames(projectcss.all, sty.svg___0Ve3U)}
+                        className={classNames(projectcss.all, sty.svg__msxPt)}
                         role={"img"}
                       />
 
@@ -480,7 +937,7 @@ function PlasmicHomepage__RenderFunc(props: {
                           projectcss.all,
                           projectcss.h4,
                           projectcss.__wab_text,
-                          sty.h4__jzWZo
+                          sty.h4__x6Hz7
                         )}
                       >
                         {"Secure"}
@@ -490,7 +947,7 @@ function PlasmicHomepage__RenderFunc(props: {
                         className={classNames(
                           projectcss.all,
                           projectcss.__wab_text,
-                          sty.text___1Wu9T
+                          sty.text__bieSp
                         )}
                       >
                         {"Full control over your funds and private keys"}
@@ -500,10 +957,10 @@ function PlasmicHomepage__RenderFunc(props: {
                     <p.Stack
                       as={"div"}
                       hasGap={true}
-                      className={classNames(projectcss.all, sty.column__wpktm)}
+                      className={classNames(projectcss.all, sty.column__h8TiL)}
                     >
                       <BlockchainSvgrepoComsvgIcon
-                        className={classNames(projectcss.all, sty.svg__kyoO)}
+                        className={classNames(projectcss.all, sty.svg__gZttQ)}
                         role={"img"}
                       />
 
@@ -512,7 +969,7 @@ function PlasmicHomepage__RenderFunc(props: {
                           projectcss.all,
                           projectcss.h4,
                           projectcss.__wab_text,
-                          sty.h4__fl8X7
+                          sty.h4__ujvMr
                         )}
                       >
                         {"Decentralize"}
@@ -522,7 +979,7 @@ function PlasmicHomepage__RenderFunc(props: {
                         className={classNames(
                           projectcss.all,
                           projectcss.__wab_text,
-                          sty.text__ozo0F
+                          sty.text__nr4B
                         )}
                       >
                         {
@@ -535,15 +992,15 @@ function PlasmicHomepage__RenderFunc(props: {
                   <p.Stack
                     as={"div"}
                     hasGap={true}
-                    className={classNames(projectcss.all, sty.columns__v6PMr)}
+                    className={classNames(projectcss.all, sty.columns__y8270)}
                   >
                     <p.Stack
                       as={"div"}
                       hasGap={true}
-                      className={classNames(projectcss.all, sty.column__rrgx8)}
+                      className={classNames(projectcss.all, sty.column__wAa2A)}
                     >
                       <AnonymousSvgrepoComsvgIcon
-                        className={classNames(projectcss.all, sty.svg__pui5H)}
+                        className={classNames(projectcss.all, sty.svg__nnvUk)}
                         role={"img"}
                       />
 
@@ -552,7 +1009,7 @@ function PlasmicHomepage__RenderFunc(props: {
                           projectcss.all,
                           projectcss.h4,
                           projectcss.__wab_text,
-                          sty.h4__t0Xav
+                          sty.h4__wyMTg
                         )}
                       >
                         {"Anonymous"}
@@ -562,7 +1019,7 @@ function PlasmicHomepage__RenderFunc(props: {
                         className={classNames(
                           projectcss.all,
                           projectcss.__wab_text,
-                          sty.text___5H7Ew
+                          sty.text___6FmWz
                         )}
                       >
                         {"keep your identity  private and protected"}
@@ -572,10 +1029,10 @@ function PlasmicHomepage__RenderFunc(props: {
                     <p.Stack
                       as={"div"}
                       hasGap={true}
-                      className={classNames(projectcss.all, sty.column__bQav0)}
+                      className={classNames(projectcss.all, sty.column__jEygR)}
                     >
                       <MultiLevelMarketingSvgrepoComsvgIcon
-                        className={classNames(projectcss.all, sty.svg__wvW3)}
+                        className={classNames(projectcss.all, sty.svg__gpX3U)}
                         role={"img"}
                       />
 
@@ -584,7 +1041,7 @@ function PlasmicHomepage__RenderFunc(props: {
                           projectcss.all,
                           projectcss.h4,
                           projectcss.__wab_text,
-                          sty.h4__smDbg
+                          sty.h4__tfFFi
                         )}
                       >
                         {"Agnostic"}
@@ -594,7 +1051,7 @@ function PlasmicHomepage__RenderFunc(props: {
                         className={classNames(
                           projectcss.all,
                           projectcss.__wab_text,
-                          sty.text__eIf0X
+                          sty.text__pnTs
                         )}
                       >
                         {
@@ -609,8 +1066,51 @@ function PlasmicHomepage__RenderFunc(props: {
           </div>
 
           <div
+            data-plasmic-name={"feature2"}
+            data-plasmic-override={overrides.feature2}
+            className={classNames(projectcss.all, sty.feature2)}
+          >
+            <h2
+              className={classNames(
+                projectcss.all,
+                projectcss.h2,
+                projectcss.__wab_text,
+                sty.h2__cfUIn
+              )}
+            >
+              {"Roadmap"}
+            </h2>
+
+            <p.Stack
+              as={"div"}
+              hasGap={true}
+              className={classNames(projectcss.all, sty.freeBox__nuUyK)}
+            >
+              <p.PlasmicImg
+                alt={""}
+                className={classNames(sty.img__hEiv)}
+                displayHeight={"auto" as const}
+                displayMaxHeight={"none" as const}
+                displayMaxWidth={"100%" as const}
+                displayMinHeight={"0" as const}
+                displayMinWidth={"0" as const}
+                displayWidth={"auto" as const}
+                loading={"lazy" as const}
+                src={{
+                  src: "/plasmic/dex_joss/images/roadmappng.png",
+                  fullWidth: 320,
+                  fullHeight: 477,
+                  aspectRatio: undefined
+                }}
+              />
+            </p.Stack>
+          </div>
+
+          <p.Stack
+            as={"div"}
             data-plasmic-name={"feature3"}
             data-plasmic-override={overrides.feature3}
+            hasGap={true}
             className={classNames(projectcss.all, sty.feature3)}
           >
             <p.Stack
@@ -618,58 +1118,37 @@ function PlasmicHomepage__RenderFunc(props: {
               hasGap={true}
               className={classNames(projectcss.all, sty.freeBox__fvt6Z)}
             >
-              <p.Stack
-                as={"div"}
-                hasGap={true}
-                className={classNames(projectcss.all, sty.freeBox__rduE)}
-              >
-                <h4
-                  className={classNames(
-                    projectcss.all,
-                    projectcss.h4,
-                    projectcss.__wab_text,
-                    sty.h4__gizcF
-                  )}
-                >
-                  {"Stay Tuned!"}
-                </h4>
+              <Icon3Icon
+                className={classNames(projectcss.all, sty.svg__qDbM)}
+                role={"img"}
+              />
 
-                <div
-                  className={classNames(
-                    projectcss.all,
-                    projectcss.__wab_text,
-                    sty.text___50O41
-                  )}
-                >
-                  {
-                    "Our team is constantly working to bring you the best experience in the DeFi World"
-                  }
-                </div>
-              </p.Stack>
+              <Icon4Icon
+                className={classNames(projectcss.all, sty.svg__xzq0W)}
+                role={"img"}
+              />
+
+              <Icon5Icon
+                className={classNames(projectcss.all, sty.svg__n7Vhl)}
+                role={"img"}
+              />
+
+              <Icon6Icon
+                className={classNames(projectcss.all, sty.svg__zvnEj)}
+                role={"img"}
+              />
             </p.Stack>
-          </div>
 
-          <div
-            data-plasmic-name={"feature4"}
-            data-plasmic-override={overrides.feature4}
-            className={classNames(projectcss.all, sty.feature4)}
-          >
-            <p.Stack
-              as={"div"}
-              hasGap={true}
-              className={classNames(projectcss.all, sty.freeBox__g8JyH)}
+            <div
+              className={classNames(
+                projectcss.all,
+                projectcss.__wab_text,
+                sty.text__eddy3
+              )}
             >
-              <div
-                className={classNames(
-                  projectcss.all,
-                  projectcss.__wab_text,
-                  sty.text__veWii
-                )}
-              >
-                {"© 2023 · Coinjoss.com"}
-              </div>
-            </p.Stack>
-          </div>
+              {"© 2023 · Coinjoss.com"}
+            </div>
+          </p.Stack>
         </div>
       </div>
     </React.Fragment>
@@ -681,27 +1160,21 @@ const PlasmicDescendants = {
     "root",
     "header",
     "navigationBar",
-    "img",
     "hero",
-    "h2",
     "h5",
-    "button",
     "feature",
+    "feature5",
     "feature2",
-    "feature3",
-    "feature4"
+    "feature3"
   ],
-  header: ["header", "navigationBar", "img"],
-  navigationBar: ["navigationBar", "img"],
-  img: ["img"],
-  hero: ["hero", "h2", "h5", "button"],
-  h2: ["h2"],
+  header: ["header", "navigationBar"],
+  navigationBar: ["navigationBar"],
+  hero: ["hero", "h5"],
   h5: ["h5"],
-  button: ["button"],
   feature: ["feature"],
+  feature5: ["feature5"],
   feature2: ["feature2"],
-  feature3: ["feature3"],
-  feature4: ["feature4"]
+  feature3: ["feature3"]
 } as const;
 type NodeNameType = keyof typeof PlasmicDescendants;
 type DescendantsType<T extends NodeNameType> =
@@ -710,15 +1183,12 @@ type NodeDefaultElementType = {
   root: "div";
   header: "div";
   navigationBar: typeof NavigationBar;
-  img: typeof p.PlasmicImg;
   hero: "section";
-  h2: "h2";
   h5: "h5";
-  button: typeof Button;
   feature: "div";
+  feature5: "div";
   feature2: "div";
   feature3: "div";
-  feature4: "div";
 };
 
 type ReservedPropsType = "variants" | "args" | "overrides";
@@ -784,15 +1254,12 @@ export const PlasmicHomepage = Object.assign(
     // Helper components rendering sub-elements
     header: makeNodeComponent("header"),
     navigationBar: makeNodeComponent("navigationBar"),
-    img: makeNodeComponent("img"),
     hero: makeNodeComponent("hero"),
-    h2: makeNodeComponent("h2"),
     h5: makeNodeComponent("h5"),
-    button: makeNodeComponent("button"),
     feature: makeNodeComponent("feature"),
+    feature5: makeNodeComponent("feature5"),
     feature2: makeNodeComponent("feature2"),
     feature3: makeNodeComponent("feature3"),
-    feature4: makeNodeComponent("feature4"),
 
     // Metadata about props expected for PlasmicHomepage
     internalVariantProps: PlasmicHomepage__VariantProps,

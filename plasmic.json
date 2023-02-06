@@ -131,6 +131,26 @@
           "id": "mrx_zfhkZ0",
           "name": "MultiLevelMarketingSvgrepoComsvgIcon",
           "moduleFilePath": "plasmic/dex_joss/icons/PlasmicIcon__MultiLevelMarketingSvgrepoComsvg.tsx"
+        },
+        {
+          "id": "Sx4ac0Z9xZ",
+          "name": "Icon3Icon",
+          "moduleFilePath": "plasmic/dex_joss/icons/PlasmicIcon__Icon3.tsx"
+        },
+        {
+          "id": "nix2_LE0eS",
+          "name": "Icon4Icon",
+          "moduleFilePath": "plasmic/dex_joss/icons/PlasmicIcon__Icon4.tsx"
+        },
+        {
+          "id": "DXIbklCl4G",
+          "name": "Icon5Icon",
+          "moduleFilePath": "plasmic/dex_joss/icons/PlasmicIcon__Icon5.tsx"
+        },
+        {
+          "id": "w7bMMt8klL",
+          "name": "Icon6Icon",
+          "moduleFilePath": "plasmic/dex_joss/icons/PlasmicIcon__Icon6.tsx"
         }
       ],
       "images": [
@@ -143,6 +163,81 @@
           "id": "_EFif-cRm",
           "name": "bg-cta.png",
           "filePath": "../public/plasmic/dex_joss/images/bgCtapng.png"
+        },
+        {
+          "id": "80Xjsw3R3",
+          "name": "logo joss.svg",
+          "filePath": "../public/plasmic/dex_joss/images/logoJosssvg.svg"
+        },
+        {
+          "id": "KeQN5h1m1",
+          "name": "bg-jossdex.png",
+          "filePath": "../public/plasmic/dex_joss/images/bgJossdexpng.png"
+        },
+        {
+          "id": "BU4Nndj501",
+          "name": "logo joss 1.svg",
+          "filePath": "../public/plasmic/dex_joss/images/logoJoss1Svg.svg"
+        },
+        {
+          "id": "UbSYwwSf7",
+          "name": "image",
+          "filePath": "../public/plasmic/dex_joss/images/image.png"
+        },
+        {
+          "id": "v-WTPghdf",
+          "name": "image 2",
+          "filePath": "../public/plasmic/dex_joss/images/image2.png"
+        },
+        {
+          "id": "eDAduBtyx",
+          "name": "image 3",
+          "filePath": "../public/plasmic/dex_joss/images/image3.png"
+        },
+        {
+          "id": "IQ0qg8UvU",
+          "name": "image 4",
+          "filePath": "../public/plasmic/dex_joss/images/image4.png"
+        },
+        {
+          "id": "Fp-c8D0cj",
+          "name": "image 5",
+          "filePath": "../public/plasmic/dex_joss/images/image5.png"
+        },
+        {
+          "id": "kHbAmHBBr",
+          "name": "image 6",
+          "filePath": "../public/plasmic/dex_joss/images/image6.png"
+        },
+        {
+          "id": "WNDme-tu_",
+          "name": "image 7",
+          "filePath": "../public/plasmic/dex_joss/images/image7.png"
+        },
+        {
+          "id": "bPXmXIYxe",
+          "name": "image 8",
+          "filePath": "../public/plasmic/dex_joss/images/image8.png"
+        },
+        {
+          "id": "3zocYPbPb",
+          "name": "image 9",
+          "filePath": "../public/plasmic/dex_joss/images/image9.png"
+        },
+        {
+          "id": "ENjp0HW_R",
+          "name": "image 10",
+          "filePath": "../public/plasmic/dex_joss/images/image10.png"
+        },
+        {
+          "id": "gpuRPBY3a",
+          "name": "raodmap.png",
+          "filePath": "../public/plasmic/dex_joss/images/raodmappng.png"
+        },
+        {
+          "id": "Sp_oCpEVH",
+          "name": "roadmap.png",
+          "filePath": "../public/plasmic/dex_joss/images/roadmappng.png"
         }
       ],
       "indirect": false,
@@ -175,6 +270,6 @@
   "nextjsConfig": {
     "pagesDir": "../pages"
   },
-  "cliVersion": "0.1.205",
-  "$schema": "https://unpkg.com/@plasmicapp/cli@0.1.205/dist/plasmic.schema.json"
+  "cliVersion": "0.1.208",
+  "$schema": "https://unpkg.com/@plasmicapp/cli@0.1.208/dist/plasmic.schema.json"
 }
